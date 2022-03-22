@@ -76,6 +76,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70492DDB27EA4AC50061DACC /* Suporte Files */ = {
+			isa = PBXGroup;
+			children = (
+				70DC6EA127EA2B810002AD65 /* AppDelegate.swift */,
+				70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */,
+				70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */,
+			);
+			path = "Suporte Files";
+			sourceTree = "<group>";
+		};
+		70492DDC27EA4AD30061DACC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				70DC6EAA27EA2B830002AD65 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		70492DDD27EA4B2C0061DACC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				70DC6EA727EA2B810002AD65 /* Main.storyboard */,
+				70DC6EA527EA2B810002AD65 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		70DC6E9527EA2B810002AD65 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +126,10 @@
 		70DC6EA027EA2B810002AD65 /* ConsultarOficinas */ = {
 			isa = PBXGroup;
 			children = (
-				70DC6EA127EA2B810002AD65 /* AppDelegate.swift */,
-				70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */,
-				70DC6EA527EA2B810002AD65 /* ViewController.swift */,
-				70DC6EA727EA2B810002AD65 /* Main.storyboard */,
-				70DC6EAA27EA2B830002AD65 /* Assets.xcassets */,
-				70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */,
 				70DC6EAF27EA2B830002AD65 /* Info.plist */,
+				70492DDC27EA4AD30061DACC /* Assets */,
+				70492DDD27EA4B2C0061DACC /* Scenes */,
+				70492DDB27EA4AC50061DACC /* Suporte Files */,
 			);
 			path = ConsultarOficinas;
 			sourceTree = "<group>";
@@ -367,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,6 +470,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
