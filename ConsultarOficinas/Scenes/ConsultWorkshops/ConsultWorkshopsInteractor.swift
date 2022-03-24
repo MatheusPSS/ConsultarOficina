@@ -16,6 +16,6 @@ class ConsultWorkshopsInteractor: ConsultWorkshopsInteractorLogic {
     var presenter: ConsultWorkshopsPresenterLogic?
     
     func handleWorkshopsList() {
-        //chamar repositorio
+        ServicesWorkshop().getListWorkshops()
     }
 }

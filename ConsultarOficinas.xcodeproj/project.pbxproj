@@ -21,6 +21,7 @@
 		70DC6EB927EA2B830002AD65 /* ConsultarOficinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EB827EA2B830002AD65 /* ConsultarOficinasTests.swift */; };
 		70DC6EC327EA2B830002AD65 /* ConsultarOficinasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */; };
 		70DC6EC527EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */; };
+		70DEC53327EBE21600DC0F8F /* ServicesWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */; };
 		70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0F07727EAB2590007319B /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		70DC6EBE27EA2B830002AD65 /* ConsultarOficinasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsultarOficinasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITests.swift; sourceTree = "<group>"; };
 		70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesWorkshop.swift; sourceTree = "<group>"; };
 		70E0F07727EAB2590007319B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				70492DDC27EA4AD30061DACC /* Assets */,
 				70E0F07627EAB2370007319B /* Common */,
 				70492DDD27EA4B2C0061DACC /* Scenes */,
+				70DEC53127EBE1EE00DC0F8F /* Services */,
 				70492DDB27EA4AC50061DACC /* Suporte Files */,
 			);
 			path = ConsultarOficinas;
@@ -183,6 +186,14 @@
 				70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */,
 			);
 			path = ConsultarOficinasUITests;
+			sourceTree = "<group>";
+		};
+		70DEC53127EBE1EE00DC0F8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		70E0F07627EAB2370007319B /* Common */ = {
@@ -330,6 +341,7 @@
 				70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */,
 				70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */,
 				707B4AF627EAA4F800C057AB /* ConsultWorkshopsPresenter.swift in Sources */,
+				70DEC53327EBE21600DC0F8F /* ServicesWorkshop.swift in Sources */,
 				70DC6EA427EA2B810002AD65 /* SceneDelegate.swift in Sources */,
 				70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */,
 				707B4AEF27EA689300C057AB /* ConsultWorkshopsTableViewController.swift in Sources */,
