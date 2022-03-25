@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		707B4AEF27EA689300C057AB /* ConsultWorkshopsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AED27EA689300C057AB /* ConsultWorkshopsTableViewController.swift */; };
-		707B4AF027EA689300C057AB /* ConsultWorkshopsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 707B4AEE27EA689300C057AB /* ConsultWorkshopsTableViewController.xib */; };
-		707B4AF427EAA4E400C057AB /* ConsultWorkshopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF327EAA4E400C057AB /* ConsultWorkshopsInteractor.swift */; };
-		707B4AF627EAA4F800C057AB /* ConsultWorkshopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF527EAA4F800C057AB /* ConsultWorkshopsPresenter.swift */; };
-		707B4AF827EAA59900C057AB /* ConsultWorkshopsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF727EAA59900C057AB /* ConsultWorkshopsRouter.swift */; };
+		707B4AEF27EA689300C057AB /* WorkshopsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AED27EA689300C057AB /* WorkshopsListTableViewController.swift */; };
+		707B4AF027EA689300C057AB /* WorkshopsListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 707B4AEE27EA689300C057AB /* WorkshopsListTableViewController.xib */; };
+		707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */; };
+		707B4AF627EAA4F800C057AB /* WorkshopsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */; };
+		707B4AF827EAA59900C057AB /* WorkshopsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */; };
 		70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE42E27EAB5EF00C267FF /* WorkshopTableViewCell.swift */; };
 		70BCE43127EAB5EF00C267FF /* WorkshopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE42F27EAB5EF00C267FF /* WorkshopTableViewCell.xib */; };
 		70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EA127EA2B810002AD65 /* AppDelegate.swift */; };
@@ -21,8 +21,11 @@
 		70DC6EB927EA2B830002AD65 /* ConsultarOficinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EB827EA2B830002AD65 /* ConsultarOficinasTests.swift */; };
 		70DC6EC327EA2B830002AD65 /* ConsultarOficinasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */; };
 		70DC6EC527EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */; };
-		70DEC53327EBE21600DC0F8F /* ServicesWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */; };
+		70DEC53327EBE21600DC0F8F /* WorkshopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */; };
 		70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0F07727EAB2590007319B /* UIColorExtension.swift */; };
+		70EC1D4027ED417A00E78343 /* WorkshopsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */; };
+		70EC1D4227ED41AE00E78343 /* WorkshopsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */; };
+		70EC1D4427ED41C100E78343 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4327ED41C100E78343 /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		707B4AED27EA689300C057AB /* ConsultWorkshopsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultWorkshopsTableViewController.swift; sourceTree = "<group>"; };
-		707B4AEE27EA689300C057AB /* ConsultWorkshopsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultWorkshopsTableViewController.xib; sourceTree = "<group>"; };
-		707B4AF327EAA4E400C057AB /* ConsultWorkshopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultWorkshopsInteractor.swift; sourceTree = "<group>"; };
-		707B4AF527EAA4F800C057AB /* ConsultWorkshopsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultWorkshopsPresenter.swift; sourceTree = "<group>"; };
-		707B4AF727EAA59900C057AB /* ConsultWorkshopsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultWorkshopsRouter.swift; sourceTree = "<group>"; };
+		707B4AED27EA689300C057AB /* WorkshopsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListTableViewController.swift; sourceTree = "<group>"; };
+		707B4AEE27EA689300C057AB /* WorkshopsListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkshopsListTableViewController.xib; sourceTree = "<group>"; };
+		707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListInteractor.swift; sourceTree = "<group>"; };
+		707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListPresenter.swift; sourceTree = "<group>"; };
+		707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListRouter.swift; sourceTree = "<group>"; };
 		70BCE42E27EAB5EF00C267FF /* WorkshopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopTableViewCell.swift; sourceTree = "<group>"; };
 		70BCE42F27EAB5EF00C267FF /* WorkshopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkshopTableViewCell.xib; sourceTree = "<group>"; };
 		70DC6E9E27EA2B810002AD65 /* ConsultarOficinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsultarOficinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +64,11 @@
 		70DC6EBE27EA2B830002AD65 /* ConsultarOficinasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsultarOficinasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITests.swift; sourceTree = "<group>"; };
 		70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesWorkshop.swift; sourceTree = "<group>"; };
+		70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsRepository.swift; sourceTree = "<group>"; };
 		70E0F07727EAB2590007319B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListRequest.swift; sourceTree = "<group>"; };
+		70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListResponse.swift; sourceTree = "<group>"; };
+		70EC1D4327ED41C100E78343 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,22 +117,22 @@
 		70492DDD27EA4B2C0061DACC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				707B4AF227EA9BE600C057AB /* ConsultWorkshops */,
+				707B4AF227EA9BE600C057AB /* WorkshopsList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		707B4AF227EA9BE600C057AB /* ConsultWorkshops */ = {
+		707B4AF227EA9BE600C057AB /* WorkshopsList */ = {
 			isa = PBXGroup;
 			children = (
 				70BCE42D27EAB5BC00C267FF /* Cell */,
-				707B4AF727EAA59900C057AB /* ConsultWorkshopsRouter.swift */,
-				707B4AF527EAA4F800C057AB /* ConsultWorkshopsPresenter.swift */,
-				707B4AF327EAA4E400C057AB /* ConsultWorkshopsInteractor.swift */,
-				707B4AED27EA689300C057AB /* ConsultWorkshopsTableViewController.swift */,
-				707B4AEE27EA689300C057AB /* ConsultWorkshopsTableViewController.xib */,
+				707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */,
+				707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */,
+				707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */,
+				707B4AED27EA689300C057AB /* WorkshopsListTableViewController.swift */,
+				707B4AEE27EA689300C057AB /* WorkshopsListTableViewController.xib */,
 			);
-			path = ConsultWorkshops;
+			path = WorkshopsList;
 			sourceTree = "<group>";
 		};
 		70BCE42D27EAB5BC00C267FF /* Cell */ = {
@@ -165,7 +171,7 @@
 				70492DDC27EA4AD30061DACC /* Assets */,
 				70E0F07627EAB2370007319B /* Common */,
 				70492DDD27EA4B2C0061DACC /* Scenes */,
-				70DEC53127EBE1EE00DC0F8F /* Services */,
+				70DEC53127EBE1EE00DC0F8F /* Repository */,
 				70492DDB27EA4AC50061DACC /* Suporte Files */,
 			);
 			path = ConsultarOficinas;
@@ -188,12 +194,13 @@
 			path = ConsultarOficinasUITests;
 			sourceTree = "<group>";
 		};
-		70DEC53127EBE1EE00DC0F8F /* Services */ = {
+		70DEC53127EBE1EE00DC0F8F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				70DEC53227EBE21600DC0F8F /* ServicesWorkshop.swift */,
+				70EC1D4327ED41C100E78343 /* BaseRepository.swift */,
+				70EC1D3E27ED3F8E00E78343 /* WorkshopsRepository */,
 			);
-			path = Services;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		70E0F07627EAB2370007319B /* Common */ = {
@@ -202,6 +209,16 @@
 				70E0F07727EAB2590007319B /* UIColorExtension.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		70EC1D3E27ED3F8E00E78343 /* WorkshopsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */,
+				70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */,
+				70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */,
+			);
+			path = WorkshopsRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +328,7 @@
 				70DC6EAE27EA2B830002AD65 /* LaunchScreen.storyboard in Resources */,
 				70DC6EAB27EA2B830002AD65 /* Assets.xcassets in Resources */,
 				70BCE43127EAB5EF00C267FF /* WorkshopTableViewCell.xib in Resources */,
-				707B4AF027EA689300C057AB /* ConsultWorkshopsTableViewController.xib in Resources */,
+				707B4AF027EA689300C057AB /* WorkshopsListTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,15 +353,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				707B4AF827EAA59900C057AB /* ConsultWorkshopsRouter.swift in Sources */,
-				707B4AF427EAA4E400C057AB /* ConsultWorkshopsInteractor.swift in Sources */,
+				707B4AF827EAA59900C057AB /* WorkshopsListRouter.swift in Sources */,
+				707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */,
 				70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */,
 				70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */,
-				707B4AF627EAA4F800C057AB /* ConsultWorkshopsPresenter.swift in Sources */,
-				70DEC53327EBE21600DC0F8F /* ServicesWorkshop.swift in Sources */,
+				707B4AF627EAA4F800C057AB /* WorkshopsListPresenter.swift in Sources */,
+				70DEC53327EBE21600DC0F8F /* WorkshopsRepository.swift in Sources */,
+				70EC1D4427ED41C100E78343 /* BaseRepository.swift in Sources */,
 				70DC6EA427EA2B810002AD65 /* SceneDelegate.swift in Sources */,
+				70EC1D4227ED41AE00E78343 /* WorkshopsListResponse.swift in Sources */,
 				70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */,
-				707B4AEF27EA689300C057AB /* ConsultWorkshopsTableViewController.swift in Sources */,
+				70EC1D4027ED417A00E78343 /* WorkshopsListRequest.swift in Sources */,
+				707B4AEF27EA689300C057AB /* WorkshopsListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

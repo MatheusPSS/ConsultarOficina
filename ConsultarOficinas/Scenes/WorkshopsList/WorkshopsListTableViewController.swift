@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ConsultWorkshopsTableViewController: UITableViewController {
+class WorkshopsListTableViewController: UITableViewController {
     
-    var interactor: ConsultWorkshopsInteractorLogic?
-    var router: ConsultWorkshopsRouterLogic?
+    var interactor: WorkshopsListInteractorLogic?
+    var router: WorkshopsListRouterLogic?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +41,9 @@ class ConsultWorkshopsTableViewController: UITableViewController {
     }
     
     private func setupVIP() {
-        let presenter = ConsultWorkshopsPresenter()
-        let interactor = ConsultWorkshopsInteractor()
-        let router = ConsultWorkshopsRouter()
+        let presenter = WorkshopsListPresenter()
+        let interactor = WorkshopsListInteractor()
+        let router = WorkshopsListRouter()
 
         self.interactor = interactor
         self.router = router
@@ -60,7 +60,7 @@ class ConsultWorkshopsTableViewController: UITableViewController {
 }
 
 // MARK: - Table view
-extension ConsultWorkshopsTableViewController {
+extension WorkshopsListTableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -75,11 +75,11 @@ extension ConsultWorkshopsTableViewController {
 }
 
 // MARK: Display Logic
-protocol ConsultWorkshopsDisplay: AnyObject {
+protocol WorkshopsListDisplay: AnyObject {
     func displayWorkshopsList()
 }
 
-extension ConsultWorkshopsTableViewController: ConsultWorkshopsDisplay {
+extension WorkshopsListTableViewController: WorkshopsListDisplay {
     
     func displayWorkshopsList() {
         

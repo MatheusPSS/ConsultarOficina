@@ -1,5 +1,5 @@
 //
-//  ConsultWorkshopsRouter.swift
+//  WorkshopsListRouter.swift
 //  ConsultarOficinas
 //
 //  Created by Matheus Pereira da Silva Souza on 22/03/22.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ConsultWorkshopsRouterLogic {
+protocol WorkshopsListRouterLogic {
     func routeDetailsWorkshop()
 }
 
-class ConsultWorkshopsRouter: ConsultWorkshopsRouterLogic {
+class WorkshopsListRouter: WorkshopsListRouterLogic {
     
-    weak var viewController: ConsultWorkshopsDisplay?
+    weak var viewController: WorkshopsListDisplay?
     
     func routeDetailsWorkshop() {
         
