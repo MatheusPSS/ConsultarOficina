@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = WorkshopsListTableViewController(nibName: "WorkshopsListTableViewController", bundle: nil)
+        let viewController = ConsultWorkshopsViewController(nibName: "ConsultWorkshopsViewController", bundle: nil)
         let navigation = UINavigationController(rootViewController: viewController)
         
         window.rootViewController = navigation

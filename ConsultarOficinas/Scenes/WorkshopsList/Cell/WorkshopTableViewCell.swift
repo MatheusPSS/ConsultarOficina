@@ -8,6 +8,8 @@
 import UIKit
 
 class WorkshopTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var nameLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,4 +22,12 @@ class WorkshopTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configShowCell(_ name: String) {
+        nameLabel.text = name
+    }
+}
+
+struct WorkshopTableViewCellModel {
+    
+    var name: String
 }

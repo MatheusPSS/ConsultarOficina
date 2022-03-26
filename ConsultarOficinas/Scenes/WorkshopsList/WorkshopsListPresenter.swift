@@ -8,14 +8,19 @@
 import Foundation
 
 protocol WorkshopsListPresenterLogic {
-    func presentWorkshopsList()
+    func presentWorkshopsList(response: WorkshopdListModels.Consult.Response)
+    func preswntErrorWorkshopsList()
 }
 
 class WorkshopsListPresenter: WorkshopsListPresenterLogic {
     
     weak var viewController: WorkshopsListDisplay?
     
-    func presentWorkshopsList() {
+    func presentWorkshopsList(response: WorkshopdListModels.Consult.Response) {
+        viewController?.displayWorkshopsList(response.workshopsListResponse.first?.name ?? "")
+    }
+    
+    func preswntErrorWorkshopsList() {
         
     }
 }

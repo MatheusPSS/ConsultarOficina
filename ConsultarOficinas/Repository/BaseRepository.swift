@@ -14,46 +14,46 @@ class BaseRepository: NSObject {
         return session
     }()
     
-    func makeRequest(request: BaseRequest) {
+    func makeRequest<T: Decodable>(request: BaseRequest, response: @escaping (Swift.Result<T, Error>) -> Void) {
         guard let url = URL(string: "\(request.baseUrl)\(request.endpoint)") else { return }
         
         var requestTask = URLRequest(url: url)
         requestTask.httpMethod = request.method.rawValue
         
-        let task = session.dataTask(with: requestTask) { data, response, error in
+        let task = session.dataTask(with: requestTask) { data, urlResponse, error in
             
-            if error != nil || data == nil {
+            if let error = error as NSError? {
+                response(.failure(error))
                 return
             }
             
-            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+            if let responseTask = urlResponse as? HTTPURLResponse,
+                (responseTask.statusCode < 200 || responseTask.statusCode >= 299) {
+                let error = NSError(
+                    domain: "ErrorHTTP",
+                    code: responseTask.statusCode,
+                    userInfo: ["message" : "HTTP error url reponse"]
+                )
+                response(.failure(error))
                 return
             }
             
             guard let data = data else {
-                return
-            }
-
-            do {
-                guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-                    print("Error: Cannot convert data to JSON object")
-                    return
-                }
-                guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
-                    print("Error: Cannot convert JSON object to Pretty JSON data")
-                    return
-                }
-                guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
-                    print("Error: Could print JSON in String")
-                    return
-                }
-                
-                print(prettyPrintedJson)
-            } catch {
-                print("Error: Trying to convert JSON data to string")
+                let error = NSError(
+                    domain: "ErrorHTTPRequest",
+                    code: -1,
+                    userInfo: ["message" : "Erro data"]
+                )
+                response(.failure(error))
                 return
             }
             
+            do {
+                let decodedObject = try JSONDecoder().decode(T.self, from: data)
+                response(.success(decodedObject))
+            } catch let error {
+                response(.failure(error))
+            }
         }
         task.resume()
     }
