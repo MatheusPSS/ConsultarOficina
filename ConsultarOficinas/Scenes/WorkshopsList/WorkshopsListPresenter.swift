@@ -17,7 +17,9 @@ class WorkshopsListPresenter: WorkshopsListPresenterLogic {
     weak var viewController: WorkshopsListDisplay?
     
     func presentWorkshopsList(response: WorkshopdListModels.Consult.Response) {
-        viewController?.displayWorkshopsList(response.workshopsListResponse.first?.name ?? "")
+        viewController?.displayWorkshopsList(viewObject: .init(
+            workshopsListViewObject: response.workshopsListResponse)
+        )
     }
     
     func preswntErrorWorkshopsList() {

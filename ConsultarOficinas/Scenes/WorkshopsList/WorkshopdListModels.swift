@@ -26,7 +26,7 @@ struct WorkshopdListModels {
         
         struct WorkshopsList {
             var id: Int?
-            var foto: UIImage?
+            var photo: UIImage?
             var name: String?
             var description: String?
         }

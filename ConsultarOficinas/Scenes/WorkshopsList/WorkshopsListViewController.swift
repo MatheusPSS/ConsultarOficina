@@ -10,8 +10,7 @@ import UIKit
 class WorkshopsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    fileprivate var tableRows: [Int] = []
-    var cellModel: WorkshopTableViewCellModel?
+    var cellModel = [WorkshopdListModels.Consult.WorkshopsList]()
     
     var interactor: WorkshopsListInteractorLogic?
     var router: WorkshopsListRouterLogic?
@@ -36,7 +35,6 @@ class WorkshopsListViewController: UIViewController {
     private func setupUI() {
         self.title = "Oficinas"
         self.navigationController?.setupNavigationBar()
-        // add tab bar com dois itens, inicio & indicar amigos
     }
     
     private func setupCell() {
@@ -50,31 +48,38 @@ class WorkshopsListViewController: UIViewController {
 extension WorkshopsListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableRows.count
+        return cellModel.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "workshopTableViewCell") as? WorkshopTableViewCell else {
             preconditionFailure("Cannot dequeue WorkshopTableViewCell")
         }
-        cell.configShowCell(interactor?.dataStore?.first?.nome ?? "Test")
+        cell.configShowCell(cellModel[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //chamar tela de detalhes
+        self.navigationController?.present(ConsultWorkshopsViewController(), animated: true)
     }
 }
 
 // MARK: Display Logic
 protocol WorkshopsListDisplay: AnyObject {
-    func displayWorkshopsList(_ name: String)
+    func displayWorkshopsList(viewObject: WorkshopdListModels.Consult.ViewObject)
 }
 
 extension WorkshopsListViewController: WorkshopsListDisplay {
     
-    func displayWorkshopsList(_ name: String) {
-        tableRows = [1]
-        cellModel?.name = name
+    func displayWorkshopsList(viewObject: WorkshopdListModels.Consult.ViewObject) {
+        cellModel = viewObject.workshopsListViewObject
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        
     }
 }
