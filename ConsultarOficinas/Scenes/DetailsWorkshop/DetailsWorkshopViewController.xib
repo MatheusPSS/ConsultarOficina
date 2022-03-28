@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsWorkshopViewController" customModule="ConsultarOficinas" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="ihF-tl-hsH" id="jF3-PB-Gqt"/>
+                <outlet property="descriptionLabel" destination="P32-zD-lU7" id="Nf4-tZ-7ro"/>
+                <outlet property="emailLabel" destination="Bsc-WO-pyQ" id="bKJ-uc-V5l"/>
+                <outlet property="logoImage" destination="hE4-fd-kUp" id="g1Y-i1-Idm"/>
+                <outlet property="mapView" destination="ic7-8K-isK" id="DQE-MP-u4g"/>
+                <outlet property="nameLabel" destination="esf-ox-QW0" id="2MK-s5-L5e"/>
+                <outlet property="telephoneLabel" destination="CgL-gQ-p0Y" id="hiP-w5-hpo"/>
+                <outlet property="telephoneTwoLabel" destination="V5z-9H-TPR" id="wxD-qZ-vE5"/>
+                <outlet property="view" destination="8Kp-57-Tpi" id="XeZ-uu-uK5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Kp-57-Tpi">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDc-zh-l5q">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="YBn-ab-Opy">
+                            <rect key="frame" x="29" y="0.0" width="356" height="929.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Oficina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esf-ox-QW0">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="ySf-Zw-RF2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hE4-fd-kUp">
+                                    <rect key="frame" x="0.0" y="56" width="356" height="112"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="112" id="q0L-5I-SZ5"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-ho-faz">
+                                    <rect key="frame" x="0.0" y="168" width="356" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="qYq-3R-fvq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P32-zD-lU7">
+                                    <rect key="frame" x="0.0" y="208" width="356" height="248.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="298" id="Jce-d9-tzz"/>
+                                    </constraints>
+                                    <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awb-vk-OtY">
+                                    <rect key="frame" x="0.0" y="456.5" width="356" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="kmj-Ke-JGE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: teste@teste.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-WO-pyQ">
+                                    <rect key="frame" x="0.0" y="496.5" width="356" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="NNg-Cn-h1p"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone: (11) 3456-5567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgL-gQ-p0Y">
+                                    <rect key="frame" x="0.0" y="536.5" width="356" height="20.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="GUJ-0A-EJt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone: (11) 3456-5567" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5z-9H-TPR">
+                                    <rect key="frame" x="0.0" y="557" width="356" height="20.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="sY5-fv-djr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4u-kM-tOo">
+                                    <rect key="frame" x="0.0" y="577.5" width="356" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="POT-8O-8UJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço: Rua Ignês Maria, 326 - Betim Industrial" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-tl-hsH">
+                                    <rect key="frame" x="0.0" y="617.5" width="356" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="pMS-D8-7u0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.35660445689999998" green="0.3535559177" blue="0.3137201369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ic7-8K-isK">
+                                    <rect key="frame" x="0.0" y="673.5" width="356" height="256"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="256" id="ooc-xF-Q0B"/>
+                                    </constraints>
+                                </mapView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="356" id="GG3-bo-Lfb"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YBn-ab-Opy" secondAttribute="trailing" id="coJ-yM-oUw"/>
+                        <constraint firstItem="YBn-ab-Opy" firstAttribute="centerX" secondItem="qDc-zh-l5q" secondAttribute="centerX" id="iB0-Yp-AQ1"/>
+                        <constraint firstAttribute="bottom" secondItem="YBn-ab-Opy" secondAttribute="bottom" id="voh-GT-S2r"/>
+                        <constraint firstItem="YBn-ab-Opy" firstAttribute="top" secondItem="qDc-zh-l5q" secondAttribute="top" id="zUl-xJ-IWH"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IdM-Vm-aP4"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qDc-zh-l5q" firstAttribute="top" secondItem="IdM-Vm-aP4" secondAttribute="top" id="JPO-LE-A3i"/>
+                <constraint firstItem="qDc-zh-l5q" firstAttribute="leading" secondItem="IdM-Vm-aP4" secondAttribute="leading" id="bAJ-gt-zzM"/>
+                <constraint firstItem="IdM-Vm-aP4" firstAttribute="bottom" secondItem="qDc-zh-l5q" secondAttribute="bottom" id="bJt-Qf-2xW"/>
+                <constraint firstItem="IdM-Vm-aP4" firstAttribute="trailing" secondItem="qDc-zh-l5q" secondAttribute="trailing" id="ibO-h9-8Zm"/>
+            </constraints>
+            <point key="canvasLocation" x="898.55072463768124" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="300" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

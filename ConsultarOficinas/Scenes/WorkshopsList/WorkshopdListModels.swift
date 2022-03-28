@@ -17,18 +17,25 @@ struct WorkshopdListModels {
         }
         
         struct Response {
-            var workshopsListResponse: [WorkshopsList]
+            var workshopsListResponse: [Workshop]
         }
         
         struct ViewObject {
-            var workshopsListViewObject: [WorkshopsList]
+            var workshopsListViewObject: [Workshop]
         }
         
-        struct WorkshopsList {
+        struct Workshop {
             var id: Int?
             var photo: UIImage?
             var name: String?
+            var shortDescription: String?
             var description: String?
+            var email: String?
+            var telephone: String?
+            var telephoneTwo: String?
+            var address: String?
+            var latitude: String?
+            var longitude: String?
         }
     }
 }

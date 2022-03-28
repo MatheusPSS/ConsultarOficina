@@ -10,7 +10,7 @@ import UIKit
 class WorkshopsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var cellModel = [WorkshopdListModels.Consult.WorkshopsList]()
+    var cellModel = [WorkshopdListModels.Consult.Workshop]()
     
     var interactor: WorkshopsListInteractorLogic?
     var router: WorkshopsListRouterLogic?
@@ -64,8 +64,7 @@ extension WorkshopsListViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //chamar tela de detalhes
-        self.navigationController?.present(ConsultWorkshopsViewController(), animated: true)
+        router?.routeDetailsWorkshop(detailsWorkshop: cellModel[indexPath.row])
     }
 }
 

@@ -19,7 +19,7 @@ class WorkshopsListInteractor: WorkshopsListInteractorLogic {
     
     var dataStore = [ListaOficina]()
     
-    typealias Workshops = WorkshopdListModels.Consult.WorkshopsList
+    typealias Workshops = WorkshopdListModels.Consult.Workshop
     
     func handleWorkshopsList(request: WorkshopdListModels.Consult.Request) {
         let request = WorkshopsListRequest(
@@ -55,7 +55,14 @@ class WorkshopsListInteractor: WorkshopsListInteractorLogic {
             workshop.id = oficina.id ?? 0
             workshop.name = oficina.nome ?? ""
             workshop.photo = getPhoto(oficina.foto ?? "")
-            workshop.description = oficina.descricaoCurta
+            workshop.shortDescription = oficina.descricaoCurta
+            workshop.description = oficina.descricao
+            workshop.email = oficina.email
+            workshop.telephone = oficina.telefone1
+            workshop.telephoneTwo = oficina.telefone2
+            workshop.address = oficina.endereco
+            workshop.latitude = oficina.latitude
+            workshop.longitude = oficina.longitude
             
             workshopsList.append(workshop)
         }

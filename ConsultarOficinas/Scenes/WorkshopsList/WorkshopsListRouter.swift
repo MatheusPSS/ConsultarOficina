@@ -8,14 +8,16 @@
 import Foundation
 
 protocol WorkshopsListRouterLogic {
-    func routeDetailsWorkshop()
+    func routeDetailsWorkshop(detailsWorkshop: WorkshopdListModels.Consult.Workshop)
 }
 
 class WorkshopsListRouter: WorkshopsListRouterLogic {
     
-    weak var viewController: WorkshopsListDisplay?
+    weak var viewController: (WorkshopsListViewController & WorkshopsListDisplay)?
     
-    func routeDetailsWorkshop() {
-        
+    func routeDetailsWorkshop(detailsWorkshop: WorkshopdListModels.Consult.Workshop) {
+        let vc = DetailsWorkshopViewController()
+        vc.detailsWorkshop = detailsWorkshop
+        viewController?.navigationController?.present(vc, animated: true)
     }
 }
