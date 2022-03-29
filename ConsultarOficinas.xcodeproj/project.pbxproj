@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70015EB127F2215300DD0721 /* IndicateFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */; };
+		70015EB227F2215300DD0721 /* IndicateFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */; };
+		70015EB427F22BB800DD0721 /* IndicateFriendsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */; };
+		70015EB627F22C1C00DD0721 /* IndicateFriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */; };
+		70015EB827F22CFB00DD0721 /* IndicateFriendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */; };
+		70015EBB27F2328500DD0721 /* IndicateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBA27F2328500DD0721 /* IndicateRepository.swift */; };
+		70015EBD27F2334F00DD0721 /* IndicateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBC27F2334F00DD0721 /* IndicateRequest.swift */; };
+		70015EBF27F233CF00DD0721 /* IndicateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBE27F233CF00DD0721 /* IndicateResponse.swift */; };
+		70015EC127F275AF00DD0721 /* IndicateFriendsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */; };
+		705AC52227F1E5960056D4EE /* DetailsWorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AC52027F1E5960056D4EE /* DetailsWorkshopViewController.swift */; };
+		705AC52327F1E5960056D4EE /* DetailsWorkshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */; };
+		707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */; };
+		707B4AF627EAA4F800C057AB /* WorkshopsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */; };
+		707B4AF827EAA59900C057AB /* WorkshopsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */; };
+		70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE42E27EAB5EF00C267FF /* WorkshopTableViewCell.swift */; };
+		70BCE43127EAB5EF00C267FF /* WorkshopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE42F27EAB5EF00C267FF /* WorkshopTableViewCell.xib */; };
 		70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EA127EA2B810002AD65 /* AppDelegate.swift */; };
 		70DC6EA427EA2B810002AD65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */; };
-		70DC6EA627EA2B810002AD65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EA527EA2B810002AD65 /* ViewController.swift */; };
-		70DC6EA927EA2B810002AD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DC6EA727EA2B810002AD65 /* Main.storyboard */; };
 		70DC6EAB27EA2B830002AD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DC6EAA27EA2B830002AD65 /* Assets.xcassets */; };
 		70DC6EAE27EA2B830002AD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */; };
 		70DC6EB927EA2B830002AD65 /* ConsultarOficinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EB827EA2B830002AD65 /* ConsultarOficinasTests.swift */; };
 		70DC6EC327EA2B830002AD65 /* ConsultarOficinasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */; };
 		70DC6EC527EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */; };
+		70DEC53327EBE21600DC0F8F /* WorkshopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */; };
+		70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0F07727EAB2590007319B /* UIColorExtension.swift */; };
+		70EC1D4027ED417A00E78343 /* WorkshopsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */; };
+		70EC1D4227ED41AE00E78343 /* WorkshopsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */; };
+		70EC1D4427ED41C100E78343 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4327ED41C100E78343 /* BaseRepository.swift */; };
+		70EC1D4827EE2A8300E78343 /* ConsultWorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4627EE2A8300E78343 /* ConsultWorkshopsViewController.swift */; };
+		70EC1D4927EE2A8300E78343 /* ConsultWorkshopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70EC1D4727EE2A8300E78343 /* ConsultWorkshopsViewController.xib */; };
+		70EC1D4B27EE2AC800E78343 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4A27EE2AC800E78343 /* UINavigationControllerExtension.swift */; };
+		70EC1D4E27EE2DFE00E78343 /* WorkshopsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D4C27EE2DFE00E78343 /* WorkshopsListViewController.swift */; };
+		70EC1D4F27EE2DFE00E78343 /* WorkshopsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70EC1D4D27EE2DFE00E78343 /* WorkshopsListViewController.xib */; };
+		70EC1D5127EE83BB00E78343 /* WorkshopdListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D5027EE83BB00E78343 /* WorkshopdListModels.swift */; };
+		70EC1D5327EE85D000E78343 /* WorkshopListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC1D5227EE85D000E78343 /* WorkshopListConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +62,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsViewController.swift; sourceTree = "<group>"; };
+		70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicateFriendsViewController.xib; sourceTree = "<group>"; };
+		70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsConfigurator.swift; sourceTree = "<group>"; };
+		70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsInteractor.swift; sourceTree = "<group>"; };
+		70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsPresenter.swift; sourceTree = "<group>"; };
+		70015EBA27F2328500DD0721 /* IndicateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateRepository.swift; sourceTree = "<group>"; };
+		70015EBC27F2334F00DD0721 /* IndicateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateRequest.swift; sourceTree = "<group>"; };
+		70015EBE27F233CF00DD0721 /* IndicateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateResponse.swift; sourceTree = "<group>"; };
+		70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsModels.swift; sourceTree = "<group>"; };
+		705AC52027F1E5960056D4EE /* DetailsWorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWorkshopViewController.swift; sourceTree = "<group>"; };
+		705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsWorkshopViewController.xib; sourceTree = "<group>"; };
+		707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListInteractor.swift; sourceTree = "<group>"; };
+		707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListPresenter.swift; sourceTree = "<group>"; };
+		707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListRouter.swift; sourceTree = "<group>"; };
+		70BCE42E27EAB5EF00C267FF /* WorkshopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopTableViewCell.swift; sourceTree = "<group>"; };
+		70BCE42F27EAB5EF00C267FF /* WorkshopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkshopTableViewCell.xib; sourceTree = "<group>"; };
 		70DC6E9E27EA2B810002AD65 /* ConsultarOficinas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsultarOficinas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DC6EA127EA2B810002AD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70DC6EA527EA2B810002AD65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		70DC6EA827EA2B810002AD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70DC6EAA27EA2B830002AD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70DC6EAD27EA2B830002AD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70DC6EAF27EA2B830002AD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +89,18 @@
 		70DC6EBE27EA2B830002AD65 /* ConsultarOficinasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsultarOficinasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DC6EC227EA2B830002AD65 /* ConsultarOficinasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITests.swift; sourceTree = "<group>"; };
 		70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarOficinasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsRepository.swift; sourceTree = "<group>"; };
+		70E0F07727EAB2590007319B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListRequest.swift; sourceTree = "<group>"; };
+		70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListResponse.swift; sourceTree = "<group>"; };
+		70EC1D4327ED41C100E78343 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		70EC1D4627EE2A8300E78343 /* ConsultWorkshopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultWorkshopsViewController.swift; sourceTree = "<group>"; };
+		70EC1D4727EE2A8300E78343 /* ConsultWorkshopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultWorkshopsViewController.xib; sourceTree = "<group>"; };
+		70EC1D4A27EE2AC800E78343 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		70EC1D4C27EE2DFE00E78343 /* WorkshopsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListViewController.swift; sourceTree = "<group>"; };
+		70EC1D4D27EE2DFE00E78343 /* WorkshopsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkshopsListViewController.xib; sourceTree = "<group>"; };
+		70EC1D5027EE83BB00E78343 /* WorkshopdListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopdListModels.swift; sourceTree = "<group>"; };
+		70EC1D5227EE85D000E78343 /* WorkshopListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopListConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +128,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70015EB927F2325600DD0721 /* IndicateRepository */ = {
+			isa = PBXGroup;
+			children = (
+				70015EBA27F2328500DD0721 /* IndicateRepository.swift */,
+				70015EBC27F2334F00DD0721 /* IndicateRequest.swift */,
+				70015EBE27F233CF00DD0721 /* IndicateResponse.swift */,
+			);
+			path = IndicateRepository;
+			sourceTree = "<group>";
+		};
+		70492DDB27EA4AC50061DACC /* Suporte Files */ = {
+			isa = PBXGroup;
+			children = (
+				70DC6EA127EA2B810002AD65 /* AppDelegate.swift */,
+				70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */,
+				70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */,
+			);
+			path = "Suporte Files";
+			sourceTree = "<group>";
+		};
+		70492DDC27EA4AD30061DACC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				70DC6EAA27EA2B830002AD65 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		70492DDD27EA4B2C0061DACC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				705AC52427F21FAB0056D4EE /* IndicateFriends */,
+				70EC1D4527EE2A2700E78343 /* ConsultWorkshops */,
+				705AC51D27F1E4920056D4EE /* DetailsWorkshop */,
+				707B4AF227EA9BE600C057AB /* WorkshopsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		705AC51D27F1E4920056D4EE /* DetailsWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				705AC52027F1E5960056D4EE /* DetailsWorkshopViewController.swift */,
+				705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */,
+			);
+			path = DetailsWorkshop;
+			sourceTree = "<group>";
+		};
+		705AC52427F21FAB0056D4EE /* IndicateFriends */ = {
+			isa = PBXGroup;
+			children = (
+				70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */,
+				70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */,
+				70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */,
+				70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */,
+				70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */,
+				70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */,
+			);
+			path = IndicateFriends;
+			sourceTree = "<group>";
+		};
+		707B4AF227EA9BE600C057AB /* WorkshopsList */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE42D27EAB5BC00C267FF /* Cell */,
+				70EC1D5227EE85D000E78343 /* WorkshopListConfigurator.swift */,
+				70EC1D5027EE83BB00E78343 /* WorkshopdListModels.swift */,
+				707B4AF727EAA59900C057AB /* WorkshopsListRouter.swift */,
+				707B4AF527EAA4F800C057AB /* WorkshopsListPresenter.swift */,
+				707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */,
+				70EC1D4C27EE2DFE00E78343 /* WorkshopsListViewController.swift */,
+				70EC1D4D27EE2DFE00E78343 /* WorkshopsListViewController.xib */,
+			);
+			path = WorkshopsList;
+			sourceTree = "<group>";
+		};
+		70BCE42D27EAB5BC00C267FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE42E27EAB5EF00C267FF /* WorkshopTableViewCell.swift */,
+				70BCE42F27EAB5EF00C267FF /* WorkshopTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		70DC6E9527EA2B810002AD65 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +236,12 @@
 		70DC6EA027EA2B810002AD65 /* ConsultarOficinas */ = {
 			isa = PBXGroup;
 			children = (
-				70DC6EA127EA2B810002AD65 /* AppDelegate.swift */,
-				70DC6EA327EA2B810002AD65 /* SceneDelegate.swift */,
-				70DC6EA527EA2B810002AD65 /* ViewController.swift */,
-				70DC6EA727EA2B810002AD65 /* Main.storyboard */,
-				70DC6EAA27EA2B830002AD65 /* Assets.xcassets */,
-				70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */,
 				70DC6EAF27EA2B830002AD65 /* Info.plist */,
+				70492DDC27EA4AD30061DACC /* Assets */,
+				70E0F07627EAB2370007319B /* Common */,
+				70492DDD27EA4B2C0061DACC /* Scenes */,
+				70DEC53127EBE1EE00DC0F8F /* Repository */,
+				70492DDB27EA4AC50061DACC /* Suporte Files */,
 			);
 			path = ConsultarOficinas;
 			sourceTree = "<group>";
@@ -125,6 +261,44 @@
 				70DC6EC427EA2B830002AD65 /* ConsultarOficinasUITestsLaunchTests.swift */,
 			);
 			path = ConsultarOficinasUITests;
+			sourceTree = "<group>";
+		};
+		70DEC53127EBE1EE00DC0F8F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				70EC1D4327ED41C100E78343 /* BaseRepository.swift */,
+				70015EB927F2325600DD0721 /* IndicateRepository */,
+				70EC1D3E27ED3F8E00E78343 /* WorkshopsRepository */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		70E0F07627EAB2370007319B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				70E0F07727EAB2590007319B /* UIColorExtension.swift */,
+				70EC1D4A27EE2AC800E78343 /* UINavigationControllerExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		70EC1D3E27ED3F8E00E78343 /* WorkshopsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				70DEC53227EBE21600DC0F8F /* WorkshopsRepository.swift */,
+				70EC1D3F27ED417A00E78343 /* WorkshopsListRequest.swift */,
+				70EC1D4127ED41AE00E78343 /* WorkshopsListResponse.swift */,
+			);
+			path = WorkshopsRepository;
+			sourceTree = "<group>";
+		};
+		70EC1D4527EE2A2700E78343 /* ConsultWorkshops */ = {
+			isa = PBXGroup;
+			children = (
+				70EC1D4627EE2A8300E78343 /* ConsultWorkshopsViewController.swift */,
+				70EC1D4727EE2A8300E78343 /* ConsultWorkshopsViewController.xib */,
+			);
+			path = ConsultWorkshops;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +405,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70015EB227F2215300DD0721 /* IndicateFriendsViewController.xib in Resources */,
 				70DC6EAE27EA2B830002AD65 /* LaunchScreen.storyboard in Resources */,
 				70DC6EAB27EA2B830002AD65 /* Assets.xcassets in Resources */,
-				70DC6EA927EA2B810002AD65 /* Main.storyboard in Resources */,
+				705AC52327F1E5960056D4EE /* DetailsWorkshopViewController.xib in Resources */,
+				70BCE43127EAB5EF00C267FF /* WorkshopTableViewCell.xib in Resources */,
+				70EC1D4927EE2A8300E78343 /* ConsultWorkshopsViewController.xib in Resources */,
+				70EC1D4F27EE2DFE00E78343 /* WorkshopsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +436,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70DC6EA627EA2B810002AD65 /* ViewController.swift in Sources */,
+				707B4AF827EAA59900C057AB /* WorkshopsListRouter.swift in Sources */,
+				707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */,
 				70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */,
+				70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */,
+				70015EBD27F2334F00DD0721 /* IndicateRequest.swift in Sources */,
+				707B4AF627EAA4F800C057AB /* WorkshopsListPresenter.swift in Sources */,
+				70015EB427F22BB800DD0721 /* IndicateFriendsConfigurator.swift in Sources */,
+				70EC1D5327EE85D000E78343 /* WorkshopListConfigurator.swift in Sources */,
+				70DEC53327EBE21600DC0F8F /* WorkshopsRepository.swift in Sources */,
+				70015EB827F22CFB00DD0721 /* IndicateFriendsPresenter.swift in Sources */,
+				70EC1D4827EE2A8300E78343 /* ConsultWorkshopsViewController.swift in Sources */,
+				70EC1D4B27EE2AC800E78343 /* UINavigationControllerExtension.swift in Sources */,
+				70EC1D4427ED41C100E78343 /* BaseRepository.swift in Sources */,
+				70015EBB27F2328500DD0721 /* IndicateRepository.swift in Sources */,
 				70DC6EA427EA2B810002AD65 /* SceneDelegate.swift in Sources */,
+				70015EB627F22C1C00DD0721 /* IndicateFriendsInteractor.swift in Sources */,
+				70015EB127F2215300DD0721 /* IndicateFriendsViewController.swift in Sources */,
+				70015EBF27F233CF00DD0721 /* IndicateResponse.swift in Sources */,
+				70EC1D4227ED41AE00E78343 /* WorkshopsListResponse.swift in Sources */,
+				70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */,
+				70EC1D4E27EE2DFE00E78343 /* WorkshopsListViewController.swift in Sources */,
+				70EC1D4027ED417A00E78343 /* WorkshopsListRequest.swift in Sources */,
+				705AC52227F1E5960056D4EE /* DetailsWorkshopViewController.swift in Sources */,
+				70015EC127F275AF00DD0721 /* IndicateFriendsModels.swift in Sources */,
+				70EC1D5127EE83BB00E78343 /* WorkshopdListModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +497,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		70DC6EA727EA2B810002AD65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70DC6EA827EA2B810002AD65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70DC6EAC27EA2B830002AD65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,9 +635,10 @@
 				INFOPLIST_FILE = ConsultarOficinas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +648,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,9 +663,10 @@
 				INFOPLIST_FILE = ConsultarOficinas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +676,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
