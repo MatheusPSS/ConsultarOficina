@@ -22,8 +22,14 @@ struct IndicateFriendsModels {
             var observation: String
         }
         
-        struct Response { }
+        struct Response {
+            var title: String
+            var message: String
+        }
         
-        struct ViewObject { }
+        struct ViewObject {
+            var title: String
+            var message: String
+        }
     }
 }

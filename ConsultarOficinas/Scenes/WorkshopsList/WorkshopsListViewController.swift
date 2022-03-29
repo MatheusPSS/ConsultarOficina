@@ -21,11 +21,7 @@ class WorkshopsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupCell()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        setupTableView()
         interactor?.handleWorkshopsList(request: .init(
             codeAssocieted: codeAssocieted,
             documentNumber: documentNumber
@@ -38,14 +34,25 @@ class WorkshopsListViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(indicateFriends))
     }
     
-    private func setupCell() {
+    private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "WorkshopTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "workshopTableViewCell")
     }
     
     @objc private func indicateFriends() {
-        router?.routeIndicateFriends(cellModel.first!)
+        guard let model = cellModel.first else {
+            return
+        }
+        router?.routeIndicateFriends(model)
+    }
+    
+    fileprivate func showAlertError(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (_) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -76,6 +83,7 @@ extension WorkshopsListViewController: UITableViewDelegate, UITableViewDataSourc
 // MARK: Display Logic
 protocol WorkshopsListDisplay: AnyObject {
     func displayWorkshopsList(viewObject: WorkshopdListModels.Consult.ViewObject)
+    func displayShowError(_ title: String, _ message: String)
 }
 
 extension WorkshopsListViewController: WorkshopsListDisplay {
@@ -84,6 +92,12 @@ extension WorkshopsListViewController: WorkshopsListDisplay {
         cellModel = viewObject.workshopsListViewObject
         DispatchQueue.main.async {
             self.tableView.reloadData()
+        }
+    }
+    
+    func displayShowError(_ title: String, _ message: String) {
+        DispatchQueue.main.async {
+            self.showAlertError(title, message)
         }
     }
 }

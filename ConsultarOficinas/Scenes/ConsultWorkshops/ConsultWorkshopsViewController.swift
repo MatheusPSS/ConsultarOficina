@@ -37,7 +37,7 @@ class ConsultWorkshopsViewController: UIViewController, UITextFieldDelegate {
     
     private func showList() {
         let vc = WorkshopListConfigurator().newInstance()
-        vc.codeAssocieted = "601"//self.codeAssociatedText.text
+        vc.codeAssocieted = self.codeAssociatedText.text
         vc.documentNumber = self.documentNumberText.text
         self.navigationController?.pushViewController(vc, animated: false)
     }

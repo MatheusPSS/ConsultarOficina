@@ -37,8 +37,8 @@ class IndicateFriendsViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func indicateFriends() {
-        interactor?.handleIndicate(request: .init(
-            codeAssociated: 0,
+        let request = IndicateFriendsModels.Indicate.Request(
+            codeAssociated: workshopAssociated?.id ?? 0,
             documentNumber: "",
             emailAssociated: workshopAssociated?.email ?? "",
             nameAssociated: workshopAssociated?.name ?? "",
@@ -48,17 +48,33 @@ class IndicateFriendsViewController: UIViewController, UITextFieldDelegate {
             emailFriend: emailText.text ?? "",
             telephoneFriend: telephoneText.text ?? "",
             observation: "")
-        )
+        
+        interactor?.handleIndicate(request: request)
+    }
+    
+    fileprivate func clearText() {
+        nameText.text = ""
+        emailText.text = ""
+        telephoneText.text = ""
+    }
+    
+    fileprivate func showAlert(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
 protocol IndicateFriendsDisplay: AnyObject {
-    func displaySuccess()
+    func displayIndicateResult(viewObject: IndicateFriendsModels.Indicate.ViewObject)
 }
 
 extension IndicateFriendsViewController: IndicateFriendsDisplay {
     
-    func displaySuccess() {
-        
+    func displayIndicateResult(viewObject: IndicateFriendsModels.Indicate.ViewObject) {
+        DispatchQueue.main.async {
+            self.clearText()
+            self.showAlert(viewObject.title, viewObject.message)
+        }
     }
 }

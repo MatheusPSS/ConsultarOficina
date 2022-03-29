@@ -27,16 +27,13 @@ class WorkshopsListInteractor: WorkshopsListInteractorLogic {
         WorkshopsRepository().getListWorkshops(request: request) { [presenter] result in
             switch result {
             case .success(let value):
-                print(value)
                 presenter?.presentWorkshopsList(
                     response: .init(
                         workshopsListResponse: self.getList(value.listaOficinas)
                     )
                 )
-            case .failure(let error):
-                print(error)
-                //criar cenario de erro com alert
-                presenter?.preswntErrorWorkshopsList()
+            case .failure(_):
+                presenter?.preswntErrorWorkshopsList("Ops!", "Não foi possível carregar a lista de Oficinas")
             }
         }
     }

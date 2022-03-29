@@ -26,12 +26,13 @@ class IndicateFriendsInteractor: IndicateFriendsInteractorLogic {
             telephoneFriend: request.telephoneFriend,
             observation: request.observation
         )
-        IndicateRepository().indicateFriend(request: request) { result in
+        
+        IndicateRepository().indicateFriend(request: request) { [presenter] result in
             switch result {
-            case .success(let value):
-                print(value)
-            case .failure(let error):
-                print(error)
+            case .success(_):
+                presenter?.presentIndicateResult(response: .init(title: "Sucesso :)", message: "Indicacao enviada com sucesso!"))
+            case .failure(_):
+                presenter?.presentIndicateResult(response: .init(title: "Ops!", message: "Falha ao enviar indicação!"))
             }
         }
     }

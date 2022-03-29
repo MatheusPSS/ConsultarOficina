@@ -8,19 +8,15 @@
 import Foundation
 
 protocol IndicateFriendsPresenterLogic {
-    func presentIndicate()
-    func presentErrorIndicate()
+    func presentIndicateResult(response: IndicateFriendsModels.Indicate.Response)
 }
 
 class IndicateFriendsPresenter: IndicateFriendsPresenterLogic {
     
     weak var viewController: IndicateFriendsDisplay?
     
-    func presentIndicate() {
-        
-    }
-    
-    func presentErrorIndicate() {
-        
+    func presentIndicateResult(response: IndicateFriendsModels.Indicate.Response) {
+        let viewObject = IndicateFriendsModels.Indicate.ViewObject(title: response.title, message: response.message)
+        viewController?.displayIndicateResult(viewObject: viewObject)
     }
 }

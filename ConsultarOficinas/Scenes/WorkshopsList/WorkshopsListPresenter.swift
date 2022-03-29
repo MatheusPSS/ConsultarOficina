@@ -9,7 +9,7 @@ import Foundation
 
 protocol WorkshopsListPresenterLogic {
     func presentWorkshopsList(response: WorkshopdListModels.Consult.Response)
-    func preswntErrorWorkshopsList()
+    func preswntErrorWorkshopsList(_ title: String, _ message: String)
 }
 
 class WorkshopsListPresenter: WorkshopsListPresenterLogic {
@@ -22,7 +22,7 @@ class WorkshopsListPresenter: WorkshopsListPresenterLogic {
         )
     }
     
-    func preswntErrorWorkshopsList() {
-        
+    func preswntErrorWorkshopsList(_ title: String, _ message: String) {
+        viewController?.displayShowError(title, message)
     }
 }
