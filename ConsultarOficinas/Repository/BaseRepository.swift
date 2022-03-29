@@ -31,6 +31,7 @@ class BaseRepository: NSObject {
                 return
             }
             
+            requestTask.setValue("application/json", forHTTPHeaderField: "Content-Type")
             requestTask.httpBody = jsonData
         }
         
