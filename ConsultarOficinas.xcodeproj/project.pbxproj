@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70015EB127F2215300DD0721 /* IndicateFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */; };
+		70015EB227F2215300DD0721 /* IndicateFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */; };
+		70015EB427F22BB800DD0721 /* IndicateFriendsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */; };
+		70015EB627F22C1C00DD0721 /* IndicateFriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */; };
+		70015EB827F22CFB00DD0721 /* IndicateFriendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */; };
+		70015EBB27F2328500DD0721 /* IndicateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBA27F2328500DD0721 /* IndicateRepository.swift */; };
+		70015EBD27F2334F00DD0721 /* IndicateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBC27F2334F00DD0721 /* IndicateRequest.swift */; };
+		70015EBF27F233CF00DD0721 /* IndicateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EBE27F233CF00DD0721 /* IndicateResponse.swift */; };
+		70015EC127F275AF00DD0721 /* IndicateFriendsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */; };
 		705AC52227F1E5960056D4EE /* DetailsWorkshopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705AC52027F1E5960056D4EE /* DetailsWorkshopViewController.swift */; };
 		705AC52327F1E5960056D4EE /* DetailsWorkshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */; };
 		707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */; };
@@ -53,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsViewController.swift; sourceTree = "<group>"; };
+		70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicateFriendsViewController.xib; sourceTree = "<group>"; };
+		70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsConfigurator.swift; sourceTree = "<group>"; };
+		70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsInteractor.swift; sourceTree = "<group>"; };
+		70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsPresenter.swift; sourceTree = "<group>"; };
+		70015EBA27F2328500DD0721 /* IndicateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateRepository.swift; sourceTree = "<group>"; };
+		70015EBC27F2334F00DD0721 /* IndicateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateRequest.swift; sourceTree = "<group>"; };
+		70015EBE27F233CF00DD0721 /* IndicateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateResponse.swift; sourceTree = "<group>"; };
+		70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateFriendsModels.swift; sourceTree = "<group>"; };
 		705AC52027F1E5960056D4EE /* DetailsWorkshopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWorkshopViewController.swift; sourceTree = "<group>"; };
 		705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsWorkshopViewController.xib; sourceTree = "<group>"; };
 		707B4AF327EAA4E400C057AB /* WorkshopsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopsListInteractor.swift; sourceTree = "<group>"; };
@@ -110,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70015EB927F2325600DD0721 /* IndicateRepository */ = {
+			isa = PBXGroup;
+			children = (
+				70015EBA27F2328500DD0721 /* IndicateRepository.swift */,
+				70015EBC27F2334F00DD0721 /* IndicateRequest.swift */,
+				70015EBE27F233CF00DD0721 /* IndicateResponse.swift */,
+			);
+			path = IndicateRepository;
+			sourceTree = "<group>";
+		};
 		70492DDB27EA4AC50061DACC /* Suporte Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +159,9 @@
 		70492DDD27EA4B2C0061DACC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				705AC51D27F1E4920056D4EE /* DetailsWorkshop */,
+				705AC52427F21FAB0056D4EE /* IndicateFriends */,
 				70EC1D4527EE2A2700E78343 /* ConsultWorkshops */,
+				705AC51D27F1E4920056D4EE /* DetailsWorkshop */,
 				707B4AF227EA9BE600C057AB /* WorkshopsList */,
 			);
 			path = Scenes;
@@ -145,6 +174,19 @@
 				705AC52127F1E5960056D4EE /* DetailsWorkshopViewController.xib */,
 			);
 			path = DetailsWorkshop;
+			sourceTree = "<group>";
+		};
+		705AC52427F21FAB0056D4EE /* IndicateFriends */ = {
+			isa = PBXGroup;
+			children = (
+				70015EB327F22BB800DD0721 /* IndicateFriendsConfigurator.swift */,
+				70015EC027F275AF00DD0721 /* IndicateFriendsModels.swift */,
+				70015EB727F22CFB00DD0721 /* IndicateFriendsPresenter.swift */,
+				70015EB527F22C1C00DD0721 /* IndicateFriendsInteractor.swift */,
+				70015EAF27F2215300DD0721 /* IndicateFriendsViewController.swift */,
+				70015EB027F2215300DD0721 /* IndicateFriendsViewController.xib */,
+			);
+			path = IndicateFriends;
 			sourceTree = "<group>";
 		};
 		707B4AF227EA9BE600C057AB /* WorkshopsList */ = {
@@ -225,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				70EC1D4327ED41C100E78343 /* BaseRepository.swift */,
+				70015EB927F2325600DD0721 /* IndicateRepository */,
 				70EC1D3E27ED3F8E00E78343 /* WorkshopsRepository */,
 			);
 			path = Repository;
@@ -362,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70015EB227F2215300DD0721 /* IndicateFriendsViewController.xib in Resources */,
 				70DC6EAE27EA2B830002AD65 /* LaunchScreen.storyboard in Resources */,
 				70DC6EAB27EA2B830002AD65 /* Assets.xcassets in Resources */,
 				705AC52327F1E5960056D4EE /* DetailsWorkshopViewController.xib in Resources */,
@@ -396,18 +440,26 @@
 				707B4AF427EAA4E400C057AB /* WorkshopsListInteractor.swift in Sources */,
 				70DC6EA227EA2B810002AD65 /* AppDelegate.swift in Sources */,
 				70E0F07827EAB2590007319B /* UIColorExtension.swift in Sources */,
+				70015EBD27F2334F00DD0721 /* IndicateRequest.swift in Sources */,
 				707B4AF627EAA4F800C057AB /* WorkshopsListPresenter.swift in Sources */,
+				70015EB427F22BB800DD0721 /* IndicateFriendsConfigurator.swift in Sources */,
 				70EC1D5327EE85D000E78343 /* WorkshopListConfigurator.swift in Sources */,
 				70DEC53327EBE21600DC0F8F /* WorkshopsRepository.swift in Sources */,
+				70015EB827F22CFB00DD0721 /* IndicateFriendsPresenter.swift in Sources */,
 				70EC1D4827EE2A8300E78343 /* ConsultWorkshopsViewController.swift in Sources */,
 				70EC1D4B27EE2AC800E78343 /* UINavigationControllerExtension.swift in Sources */,
 				70EC1D4427ED41C100E78343 /* BaseRepository.swift in Sources */,
+				70015EBB27F2328500DD0721 /* IndicateRepository.swift in Sources */,
 				70DC6EA427EA2B810002AD65 /* SceneDelegate.swift in Sources */,
+				70015EB627F22C1C00DD0721 /* IndicateFriendsInteractor.swift in Sources */,
+				70015EB127F2215300DD0721 /* IndicateFriendsViewController.swift in Sources */,
+				70015EBF27F233CF00DD0721 /* IndicateResponse.swift in Sources */,
 				70EC1D4227ED41AE00E78343 /* WorkshopsListResponse.swift in Sources */,
 				70BCE43027EAB5EF00C267FF /* WorkshopTableViewCell.swift in Sources */,
 				70EC1D4E27EE2DFE00E78343 /* WorkshopsListViewController.swift in Sources */,
 				70EC1D4027ED417A00E78343 /* WorkshopsListRequest.swift in Sources */,
 				705AC52227F1E5960056D4EE /* DetailsWorkshopViewController.swift in Sources */,
+				70015EC127F275AF00DD0721 /* IndicateFriendsModels.swift in Sources */,
 				70EC1D5127EE83BB00E78343 /* WorkshopdListModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

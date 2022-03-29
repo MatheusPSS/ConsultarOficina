@@ -9,9 +9,9 @@ import UIKit
 
 class WorkshopTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak private var nameLabel: UILabel!
+    @IBOutlet weak private var descriptionLabel: UILabel!
+    @IBOutlet weak private var photo: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

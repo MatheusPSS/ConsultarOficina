@@ -10,15 +10,12 @@ import UIKit
 
 protocol WorkshopsListInteractorLogic {
     func handleWorkshopsList(request: WorkshopdListModels.Consult.Request)
-    var dataStore: [ListaOficina] { get }
 }
 
 class WorkshopsListInteractor: WorkshopsListInteractorLogic {
     
     var presenter: WorkshopsListPresenterLogic?
-    
-    var dataStore = [ListaOficina]()
-    
+        
     typealias Workshops = WorkshopdListModels.Consult.Workshop
     
     func handleWorkshopsList(request: WorkshopdListModels.Consult.Request) {
@@ -31,9 +28,6 @@ class WorkshopsListInteractor: WorkshopsListInteractorLogic {
             switch result {
             case .success(let value):
                 print(value)
-                
-                self.dataStore = value.listaOficinas
-                
                 presenter?.presentWorkshopsList(
                     response: .init(
                         workshopsListResponse: self.getList(value.listaOficinas)

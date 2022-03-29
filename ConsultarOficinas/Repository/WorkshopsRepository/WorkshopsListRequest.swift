@@ -17,11 +17,11 @@ class WorkshopsListRequest: BaseRequest {
         self.documentNumber = documentNumber
     }
     
-    override var endpoint: String {
+    var endpoint: String {
         return "/Api/Oficina?codigoAssociacao=\(codeAssociated)&cpfAssociado=\(documentNumber)"
     }
     
-    override var method: HttpMethod {
+    var method: HttpMethod {
         return .get
     }
 }

@@ -10,14 +10,14 @@ import MapKit
 
 class DetailsWorkshopViewController: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var telephoneLabel: UILabel!
-    @IBOutlet weak var telephoneTwoLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak private var nameLabel: UILabel!
+    @IBOutlet weak private var logoImage: UIImageView!
+    @IBOutlet weak private var descriptionLabel: UILabel!
+    @IBOutlet weak private var emailLabel: UILabel!
+    @IBOutlet weak private var telephoneLabel: UILabel!
+    @IBOutlet weak private var telephoneTwoLabel: UILabel!
+    @IBOutlet weak private var addressLabel: UILabel!
+    @IBOutlet weak private var mapView: MKMapView!
 
     
     var detailsWorkshop: WorkshopdListModels.Consult.Workshop?

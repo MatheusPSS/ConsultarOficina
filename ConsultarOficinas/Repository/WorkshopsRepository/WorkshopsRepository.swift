@@ -11,8 +11,10 @@ class WorkshopsRepository {
     
     typealias WorkshopsListResult = Swift.Result<WorkshopsListResponse, Error>
     
+    let repository = BaseRepository.repository
+    
     func getListWorkshops(request: BaseRequest, completion: @escaping (WorkshopsListResult) -> Void) {
-        BaseRepository().makeRequest(request: request) { (result: WorkshopsListResult) in
+        repository.makeRequest(request: request) { (result: WorkshopsListResult) in
             switch result {
             case .success(let value):
                 if let error = self.validApiError(value) {
@@ -27,13 +29,8 @@ class WorkshopsRepository {
     }
     
     private func validApiError(_ value: WorkshopsListResponse) -> NSError? {
-        if let returnError = value.retornoErro.retornoErro {
-            let error = NSError(
-                domain: "ErrorAPI",
-                code: -1,
-                userInfo: ["message" : returnError]
-            )
-            return error
+        if let returnError = repository.validReturnError(value.retornoErroWorkshops) {
+            return returnError
         } else if value.listaOficinas.isEmpty {
             let error = NSError(
                 domain: "ErrorAPI",

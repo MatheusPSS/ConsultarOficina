@@ -9,9 +9,9 @@ import UIKit
 
 class ConsultWorkshopsViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var codeAssociatedText: UITextField!
-    @IBOutlet weak var documentNumberText: UITextField!
-    @IBOutlet weak var consultBottom: UIButton!
+    @IBOutlet weak private var codeAssociatedText: UITextField!
+    @IBOutlet weak private var documentNumberText: UITextField!
+    @IBOutlet weak private var consultBottom: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class ConsultWorkshopsViewController: UIViewController, UITextFieldDelegate {
     
     private func showList() {
         let vc = WorkshopListConfigurator().newInstance()
-        vc.codeAssocieted = self.codeAssociatedText.text
+        vc.codeAssocieted = "601"//self.codeAssociatedText.text
         vc.documentNumber = self.documentNumberText.text
         self.navigationController?.pushViewController(vc, animated: false)
     }

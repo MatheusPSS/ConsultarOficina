@@ -9,12 +9,12 @@ import Foundation
 
 struct WorkshopsListResponse: Codable {
     let token: String?
-    let retornoErro: RetornoErro
+    let retornoErroWorkshops: RetornoErro
     let listaOficinas: [ListaOficina]
 
     enum CodingKeys: String, CodingKey {
         case token = "Token"
-        case retornoErro = "RetornoErro"
+        case retornoErroWorkshops = "RetornoErro"
         case listaOficinas = "ListaOficinas"
     }
 }
@@ -51,4 +51,8 @@ struct ListaOficina: Codable {
 
 struct RetornoErro: Codable {
     let retornoErro: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case retornoErro = "retornoErro"
+    }
 }

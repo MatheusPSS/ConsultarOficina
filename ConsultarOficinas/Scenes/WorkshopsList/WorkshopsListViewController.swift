@@ -9,7 +9,7 @@ import UIKit
 
 class WorkshopsListViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak fileprivate var tableView: UITableView!
     var cellModel = [WorkshopdListModels.Consult.Workshop]()
     
     var interactor: WorkshopsListInteractorLogic?
@@ -35,12 +35,17 @@ class WorkshopsListViewController: UIViewController {
     private func setupUI() {
         self.title = "Oficinas"
         self.navigationController?.setupNavigationBar()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(indicateFriends))
     }
     
     private func setupCell() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "WorkshopTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "workshopTableViewCell")
+    }
+    
+    @objc private func indicateFriends() {
+        router?.routeIndicateFriends(cellModel.first!)
     }
 }
 
